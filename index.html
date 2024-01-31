@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    .hero {
+      background-image: url("photos/background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      object-fit: none;
+    }
+
+    #map {
+      height: 400px;
+      width: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--home page  -->
+  <div id="home" class="home">
+    <div class="hero">
+      <!-- navbar -->
+      <div id="navbar" class="navbar">
+        <div class="navbar-left">
+          <img src="photos/logo.png" alt="">
+        </div>
+        <div class="navbar-right">
+          <a class="nav-item" href="#" onclick="scrollToElement('home')">Home</a>
+          <a class="nav-item" href="#" onclick="scrollToElement('class')">Classes</a>
+          <a class="nav-item" href="#" onclick="scrollToElement('trainers')">Trainer</a>
+          <a class="nav-item" href="#" onclick="scrollToElement('reviews')">Review</a>
+          <a class="nav-item" href="#" onclick="scrollToElement('contact-element')">Contact</a>
+          <button class="navbar-button">
+            <a class="nav-item" href="#">JOIN US</a>
+          </button>
+        </div>
+      </div>
+      <div class="main-container">
+        <!-- mid -->
+        <div class="mid-area">
+          <div class="mid-p">
+            <h5>
+              <p>POWERFULL</p>
+            </h5>
+            <h1>Group <br>Practice <br>With Trainer</h1>
+            <p class="mid-p-big" style="color: white;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Omnis, iure, libero laboriosam atque, porro necessitatibus consequatur sapiente totam est
+              aliquid veritatis adipisci dolores dolor possimus quia nam quos! In asperiores fugit officiis nemo.
+              Laudantium nemo consequuntur nobis eveniet minus in quos, vitae similique nihil aspernatur, necessitatibus
+              quaerat cupiditate incidunt doloribus!</p>
+
+            <div class="mid-area-buttons">
+              <button class="sign-up">Sign Up</button>
+              <button class="details">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- data -->
+    <div class="bottom-area">
+      <div class="square col-3">
+        <p class="square-in-number">325</p>
+        <p class="square-in-p">Course</p>
+      </div>
+      <div class="square col-3">
+        <p class="square-in-number">405</p>
+        <p class="square-in-p">Work Out</p>
+      </div>
+      <div class="square col-3">
+        <p class="square-in-number">305</p>
+        <p class="square-in-p">Working Hour</p>
+      </div>
+      <div class="square col-3">
+        <p class="square-in-number">705</p>
+        <p class="square-in-p">Happy Client</p>
+      </div>
+    </div>
+  </div>
+  <!-- gym classes  -->
+  <div id="class" class="class">
+    <div class="gym-class">
+      <div class="top-outer">
+        <h1 style="color:  #375390;font-size: 32px;font-weight: 800;">OUR CLASSES</h1>
+        <hr class="line">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Itaque veniam sit sequi ipsum esse cupiditate culpa!</p>
+        <div class="class-section col-12">
+          <button class="classes col-3" onclick="showClass('yoga',this)">Yoga</button>
+          <button class="classes col-3" onclick="showClass('group',this)">Group<buttonv></buttonv>
+            <button class="classes col-3" onclick="showClass('solo',this)">Solo</button>
+            <button class="classes col-3" onclick="showClass('stretching',this)">Stretching</button>
+        </div>
+
+        <div id="yoga" class="class-content show">
+          <div class="col-6">
+            <h2>Are you yoga?</h2>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur architecto quia excepturi minus? Vero temporibus
+              eaque modi labore odit laudantium.</p>
+            <h2>When yoga you do?</h2>
+            <br>
+            <p>Saturday-Sunday: 8:00am-10:00am</p>
+            <p>Monday-Tuesday: 10:00am-12:00pm</p>
+            <p>Wednesday-Friday: 3:00pm-6:00pm</p>
+          </div>
+          <div class="yoga-image col-6">
+            <img src="photos/yoga.jpg" alt="yoga" width="400" height="300">
+          </div>
+        </div>
+        <div id="group" class="class-content">
+          <div class="col-6">
+            <h2>Are you Group?</h2>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur architecto quia excepturi minus? Vero temporibus
+              eaque modi labore odit laudantium.</p>
+            <h2>When group you do?</h2>
+            <br>
+            <p>Saturday-Sunday: 8:00am-10:00am</p>
+            <p>Monday-Tuesday: 10:00am-12:00pm</p>
+            <p>Wednesday-Friday: 3:00pm-6:00pm</p>
+          </div>
+          <div class="yoga-image col-6">
+            <img src="photos/group.webp" alt="group" width="400" height="300">
+          </div>
+        </div>
+        <div id="solo" class="class-content">
+          <div class="col-6">
+            <h2>Are you SOLO?</h2>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur architecto quia excepturi minus? Vero temporibus
+              eaque modi labore odit laudantium.</p>
+            <h2>When SOLO you do?</h2>
+            <br>
+            <p>Saturday-Sunday: 8:00am-10:00am</p>
+            <p>Monday-Tuesday: 10:00am-12:00pm</p>
+            <p>Wednesday-Friday: 3:00pm-6:00pm</p>
+          </div>
+          <div class="yoga-image col-6">
+            <img src="photos/solo.jpg" alt="solo" width="400" height="300">
+          </div>
+        </div>
+        <div id="stretching" class="class-content">
+          <div class="col-6">
+            <h2>Are you stretttcthing?</h2>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur architecto quia excepturi minus? Vero temporibus
+              eaque modi labore odit laudantium.</p>
+            <h2>When stretchging you do?</h2>
+            <br>
+            <p>Saturday-Sunday: 8:00am-10:00am</p>
+            <p>Monday-Tuesday: 10:00am-12:00pm</p>
+            <p>Wednesday-Friday: 3:00pm-6:00pm</p>
+          </div>
+          <div class="yoga-image col-6">
+            <img src="photos/stret.webp" alt="yoga" width="400" height="300">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-gym">
+      <div class="bottom-gym-inner">
+        <div class="bmi-calculator">
+          <h1 style="color:#375390;font-weight: 900;">BMI Calculator</h1>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae est, consequuntur ut numquam repudiandae mollitia
+            consequatur incidunt placeat dolor! Soluta mollitia doloremque eius commodi eum.
+          </p>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Nam accusamus, blanditiis delectus maiores aut laudantium inventore
+            dolorem perspiciatis harum sapiente deserunt animi autem beatae deleniti?
+          </p>
+          <br>
+          <div class="calculation">
+            <input type="number" id="heightInput" placeholder="Your Height-cm">
+            <p style="margin-top: 15px;">cm</p>
+            <input type="number" id="weightInput" placeholder="Your Weight">
+            <p style="margin-top: 15px;">kg</p>
+            <button class="bmi-calculate-button" onclick="calculateBMI()">Calculate</button>
+            <button class="reset-button" onclick="resetValues()">Reset</button>
+          </div>
+          <p id="result"></p>
+        </div>
+        <div class="bmi-image">
+          <h3 style="font-weight: 900;">Your BMI</h3>
+          <img src="photos/bmi-index.jpg" alt="bmi-index">
+          <div class="triangle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- trainers -->
+  <div id="trainers" class="trainers" style="background-color: rgb(223, 237, 247)trainer-img-inf ;">
+    <div class="trainer-info">
+      <h1 style="color:  #375390;font-size: 32px;font-weight: 800;">OUR BEST TRAINERS</h1>
+      <hr class="line-gym">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Distinctio unde neque suscipit. Consectetur, eos libero.
+      </p>
+      <div class="trainer-img col-12">
+        <div class="trainer-img-inf col-4">
+          <img src="photos/trainer1.jpg" alt="trainer-1">
+          <div class="overlay">
+            <p>Jaina Doe</p>
+            <p>Special Trainer</p>
+          </div>
+        </div>
+        <div class="trainer-img-inf col-4">
+          <img src="photos/trainer2.jpg" alt="trainer-2">
+          <div class="overlay">
+            <p>John Doe</p>
+            <p>General Trainer</p>
+          </div>
+        </div>
+        <div class="trainer-img-inf col-4">
+          <img src="photos/trainer3.jpg" alt="trainer-3">
+          <div class="overlay">
+            <p>Jane Doe</p>
+            <p>Cardio Trainer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="purchase">
+      <h1 style="color:  #375390;font-size: 32px;font-weight: 800;">PURCHASE FROM US</h1>
+      <hr class="line">
+      <p style="margin-top: 20px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Distinctio unde neque suscipit. Consectetur, eos libero.
+      </p>
+      <div class="purchase-img">
+        <div class="purchase-img-inf col-3">
+          <img src="photos/purchase1.jpg" alt="purchase1">
+          <div class="purchase-items">
+            <h3>Kettlebell / 5kg</h3>
+            <br>
+            <h5>89,99$/59,99$</h5>
+          </div>
+          <div class="shop">
+            <i class="bi bi-cart-fill"></i>
+            <span>Add To Cart</span>
+          </div>
+        </div>
+        <div class="purchase-img-inf col-3">
+          <img src="photos/purchase2.jpg" alt="purchase2">
+          <div class="purchase-items">
+            <h3>Treadmill</h3>
+            <br>
+            <h5>899,99$/599,99$</h5>
+          </div>
+          <div class="shop">
+            <i class="bi bi-cart-fill"></i>
+            <span>Add To Cart</span>
+          </div>
+        </div>
+        <div class="purchase-img-inf col-3"><img src="photos/purchase3.jpg" alt="purchase3">
+          <div class="purchase-items">
+            <h3>Adjustable Dumbbell</h3>
+            <br>
+            <h5>89,99$/89,99$</h5>
+          </div>
+          <div class="shop">
+            <i class="bi bi-cart-fill"></i>
+            <span>Add To Cart</span>
+          </div>
+        </div>
+        <div class="purchase-img-inf col-3"><img src="photos/purchase4.jpg" alt="purchase4">
+          <div class="purchase-items">
+            <h3>Kettlebell / 3kg</h3>
+            <br>
+            <h5>69,99$/39,99$</h5>
+          </div>
+          <div class="shop">
+            <i class="bi bi-cart-fill"></i>
+            <span>Add To Cart</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- reviews -->
+  <div id="reviews" class="footer-review">
+    <div class="review">
+      <div class="client-review">
+        <h1 style="color:#375390;font-size: 32px;font-weight: 800;margin-top: 50px;">CLIENT REVIEW</h1>
+        <hr class="line">
+        <p style="margin-top: 20px;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Distinctio unde neque suscipit. Consectetur, eos libero.
+        </p>
+        <div class="reviewsMain">
+          <div class="reviews">
+            <div class="client-reviews">
+              <div class="client-inner">
+                <img src="photos/client1.jpg" alt="client1">
+                <div style="margin-top: 20px;">
+                  <h2>Diet Expert</h2>
+                  <h3>CFO</h3>
+                </div>
+              </div>
+              <div class="client-p">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. M
+                  aiores rem fugiat sequi optio omnis cumque, delectus digniss
+                  imos nulla ducimus deleniti non voluptates officia minus consequatur.</p>
+              </div>
+              <div class="inner-boxes">
+                <div class="inner-box-left"></div>
+                <div class="inner-box"></div>
+              </div>
+            </div>
+            <div class="client-reviews">
+              <div class="client-inner">
+                <img src="photos/client2.jpg" alt="client2">
+                <div style="margin-top: 20px;">
+                  <h2>Cardio Trainer</h2>
+                  <h3>CEO</h3>
+                </div>
+              </div>
+              <div class="client-p">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. M
+                  aiores rem fugiat sequi optio omnis cumque, delectus digniss
+                  imos nulla ducimus deleniti non voluptates officia minus consequatur.</p>
+              </div>
+              <div class="inner-boxes">
+                <div class="inner-box-left"></div>
+                <div class="inner-box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="contact-element" class="contact">
+      <h1 style="color:  #375390;font-size: 32px;font-weight: 800;margin-top: 50px;">CONTACT US</h1>
+      <hr class="line">
+      <p style="margin-top: 20px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Distinctio unde neque suscipit. Consectetur, eos libero.
+      </p>
+    </div>
+    <div class="contact-inf">
+      <div class="addres">
+        <div class="addres-left">
+          <div>
+            <h4>Mobile Number</h4>
+            <h6>+135 773 321 4442</h6>
+          </div>
+          <div>
+            <h4>Email Address</h4>
+            <h6>demo@demo.com</h6>
+          </div>
+        </div>
+        <div class="addres-input">
+          <h2>Make An Appointment</h2>
+          <input class="input-bg" type="text" placeholder="Your Name">
+          <input class="input-bg" type="text" placeholder="Your Email">
+          <textarea class="input-bg" placeholder="Your Message" cols="20" rows="4"></textarea>
+        </div>
+      </div>
+      <div class="google-map">
+        <div id="map"></div>
+      </div>
+
+    </div>
+    <footer class="footer">
+      <div class="footer-extend">
+        <div class="footer-header">
+          <img src="photos/logo.png" alt="logo">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda soluta magnam, v
+            eritatis magni quos eius, obcaecati officiis error blanditiis beatae distinctio architecto
+            vitae eos officia tenetur repudiandae voluptatem esse excepturi.
+          </p>
+        </div>
+        <div class="footer-detail">
+          <div class="footer-inf">
+            <h4>Information</h4>
+            <h6>About Us</h6>
+            <h6>Classes</h6>
+            <h6>Blog</h36>
+              <h6>Contact</h6>
+          </div>
+          <div class="footer-inf">
+            <h4>Helpful Links</h4>
+            <h6>Services</h6>
+            <h6>Supports</h6>
+            <h6>Terms & Condition</h6>
+            <h6>Privacy Policy</h6>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+  <script src="js/sport.js"></script>
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD82-EkSxbnTznzGvqmgG3IK3nAenm3fak&callback=initMap"
+      type="text/javascript">
+  </script>
+</body>
+
+</html>

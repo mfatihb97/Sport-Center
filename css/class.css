@@ -72,16 +72,7 @@
     outline: none !important;
 }
 
-/* .button-triangle{
-    display: flex;
-    justify-content: center;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent; 
-    border-top: 20px solid orange;
-    
-} */
+
 .classes:hover{
     background-color: var(--general-color-2);
 }

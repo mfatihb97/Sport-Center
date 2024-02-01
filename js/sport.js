@@ -105,23 +105,6 @@ window.onload = function() {
   };
 
 
-//Map-13
-let map;
 
-	function initMap() {
-	  map = new google.maps.Map(document.getElementById('map'), {zoom: 6, center: { lat: 39.515137, lng: 24.979530 }, mapTypeId: 'roadmap', disableDefaultUI: true});
-	  
-	  let marker = new google.maps.Marker( {position: {lat: 39.925533, lng: 32.866287}, map: map, title: 'Ankara'} );
-	}
-	
-	function changeMapType() {
-		map.setMapTypeId(document.getElementById("mapViewType").value);
-	}
-	
-	let zoomRange = document.getElementById("zoomRange");
-	
-	zoomRange.oninput = function() {
-	  map.setZoom(parseInt(this.value));
-	}
 
   

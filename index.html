@@ -17,11 +17,6 @@
       background-attachment: fixed;
       object-fit: none;
     }
-
-    #map {
-      height: 400px;
-      width: 400px;
-    }
   </style>
 </head>
 
@@ -31,6 +26,7 @@
     <div class="hero">
       <!-- navbar -->
       <div id="navbar" class="navbar">
+        <input class="checkbox" type="checkbox" id="toggle">
         <div class="navbar-left">
           <img src="photos/logo.png" alt="">
         </div>
@@ -43,7 +39,13 @@
           <button class="navbar-button">
             <a class="nav-item" href="#">JOIN US</a>
           </button>
+          
         </div>
+        <label for="toggle" class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
       </div>
       <div class="main-container">
         <!-- mid -->
@@ -216,13 +218,17 @@
       </p>
       <div class="trainer-img col-12">
         <div class="trainer-img-inf col-4">
-          <img src="photos/trainer1.jpg" alt="trainer-1">
-          <div class="overlay">
-            <p>Jaina Doe</p>
-            <p>Special Trainer</p>
-          </div>
+          <div class="trainer-bg-1"></div>
+          <div class="trainer-bg-2"></div>
+            <img src="photos/trainer1.jpg" alt="trainer-1">
+            <div class="overlay">
+              <p>Jaina Doe</p>
+              <p>Special Trainer</p>
+            </div>
         </div>
         <div class="trainer-img-inf col-4">
+          <div class="trainer-bg-1"></div>
+          <div class="trainer-bg-2"></div>
           <img src="photos/trainer2.jpg" alt="trainer-2">
           <div class="overlay">
             <p>John Doe</p>
@@ -230,6 +236,8 @@
           </div>
         </div>
         <div class="trainer-img-inf col-4">
+          <div class="trainer-bg-1"></div>
+          <div class="trainer-bg-2"></div>
           <img src="photos/trainer3.jpg" alt="trainer-3">
           <div class="overlay">
             <p>Jane Doe</p>
@@ -285,7 +293,7 @@
           <div class="purchase-items">
             <h3>Kettlebell / 3kg</h3>
             <br>
-            <h5>69,99$/39,99$</h5>
+            <h5><span style="text-decoration:line-through;">69,99$</span>/39,99$</h5>
           </div>
           <div class="shop">
             <i class="bi bi-cart-fill"></i>
@@ -376,7 +384,8 @@
         </div>
       </div>
       <div class="google-map">
-        <div id="map"></div>
+        <!-- <div id="map"></div> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12239.34435121327!2d32.83891621738281!3d39.922684200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34b24dabc5d09%3A0x68179e50e422ee53!2sBed%20Fit%20Personal%20Trainer!5e0!3m2!1str!2str!4v1706779607319!5m2!1str!2str" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
     </div>
@@ -410,10 +419,6 @@
     </footer>
   </div>
   <script src="js/sport.js"></script>
-  <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD82-EkSxbnTznzGvqmgG3IK3nAenm3fak&callback=initMap"
-      type="text/javascript">
-  </script>
 </body>
 
 </html>
